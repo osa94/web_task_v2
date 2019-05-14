@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'students.apps.StudentsConfig',
     'exams.apps.ExamsConfig',
     'tasks.apps.TasksConfig',
+    'answers.apps.AnswersConfig',
 ]
 
 MIDDLEWARE = [
