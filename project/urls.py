@@ -11,4 +11,5 @@ urlpatterns = [
     path('answers/', include('answers.urls')),
     path('earned_points/', include('earned_points.urls')),
     path('final_grades/', include('final_grades.urls')),
+    path('api-auth', include('rest_framework.urls')),
 ]
