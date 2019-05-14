@@ -1,3 +1,4 @@
 from django.contrib import admin
+from earned_points.models import EarnedPoints
 
-# Register your models here.
+admin.site.register(EarnedPoints)
