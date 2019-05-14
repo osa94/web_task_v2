@@ -30,4 +30,4 @@ class AnswerSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Answer
-        fields = ('id', 'owner', 'task', 'answer',)
+        fields = ('id', 'owner', 'task', 'answer', 'earned_points',)
