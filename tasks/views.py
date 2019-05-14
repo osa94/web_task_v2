@@ -4,12 +4,13 @@ from tasks.models import Task
 from teachers.models import Teacher
 from exams.models import Exam
 from tasks.serializers import TaskSerializer
+from tasks.permissions import IsTeacherAndOwner
 
 
 class TaskViewSet(viewsets.ModelViewSet):
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticated, IsTeacherAndOwner, )
 
     def get_serializer_context(self):
         return {'request': self.request}
