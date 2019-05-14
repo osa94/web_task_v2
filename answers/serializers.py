@@ -6,6 +6,7 @@ from django.db.models import Q
 
 
 class AnswerSerializer(serializers.HyperlinkedModelSerializer):
+    earned_points = serializers.StringRelatedField(many=True, read_only=True)
     owner = serializers.ReadOnlyField(source='owner.username.username')
     task = serializers.PrimaryKeyRelatedField(queryset=Task.objects.all(), )
 

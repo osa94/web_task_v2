@@ -9,4 +9,5 @@ urlpatterns = [
     path('exams/', include('exams.urls')),
     path('tasks/', include('tasks.urls')),
     path('answers/', include('answers.urls')),
+    path('earned_points/', include('earned_points.urls')),
 ]

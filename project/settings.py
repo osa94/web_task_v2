@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'exams.apps.ExamsConfig',
     'tasks.apps.TasksConfig',
     'answers.apps.AnswersConfig',
+    'earned_points.apps.EarnedPointsConfig',
 ]
 
 MIDDLEWARE = [
