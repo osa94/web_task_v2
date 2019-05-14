@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'tasks.apps.TasksConfig',
     'answers.apps.AnswersConfig',
     'earned_points.apps.EarnedPointsConfig',
+    'final_grades.apps.FinalGradesConfig',
 ]
 
 MIDDLEWARE = [
