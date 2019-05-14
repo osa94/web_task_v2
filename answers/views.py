@@ -6,12 +6,13 @@ from students.models import Student
 from tasks.models import Task
 from django.db.models import Q
 from answers.serializers import AnswerSerializer
+from answers.permissions import OwnerCanSolveTeacherCanRead
 
 
 class AnswerViewSet(viewsets.ModelViewSet):
     queryset = Answer.objects.all()
     serializer_class = AnswerSerializer
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (permissions.IsAuthenticated, OwnerCanSolveTeacherCanRead, )
 
     def get_serializer_context(self):
         return {'request': self.request}
