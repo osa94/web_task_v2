@@ -1,0 +1,81 @@
+set-up instruction
+
+1.Install modules included in requirements.txt
+2.Open cmd
+3.Type in cmd: cd Path\to\the\project (this is example path, you have to type your project localization)
+4.Type in cmd: python setup.py
+5.If u want to stop project stay in cmd and press ctrl+C
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Information about users
+
+Actually there are 6 users:
+id=1    username=admin         password=admin
+id=2    username=Teacher1      password=TypicalCommonUser
+id=3    username=Teacher2      password=TypicalCommonUser
+id=4    username=Student1      password=TypicalCommonUser
+id=5    username=Student2      password=TypicalCommonUser
+id=6    username=Student3      password=TypicalCommonUser
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Usage instruction
+
+Type in Your browser:          http://127.0.0.1:8000/
+
+There should be visible all suffixes:
+
+###############################################################################################################################################
+admin/
+
+This is admin panel. Only admin can be logged there.
+
+###############################################################################################################################################
+teachers/
+
+List all existing teachers with additional information about them. Available even if nobody is logged
+
+###############################################################################################################################################
+students/
+
+List all existing students with additional information about them. Available even if nobody is logged
+
+###############################################################################################################################################
+exams/
+
+Only Teacher has permissions to use this suffix. Teacher can see all his exams and can add new (cannot add 2nd same titled exam).
+Can read details about his exam and delete his exam.
+
+###############################################################################################################################################
+tasks/
+
+Only Teacher has permissions to use this suffix. Teacher can see all his tasks and can add new tasks to his exams.
+Can read details about his tasks.
+
+###############################################################################################################################################
+tasks/
+
+Only Teacher has permissions to use this suffix. Teacher can see all his tasks and can add new tasks to his exams.
+Can read details about his tasks.
+
+###############################################################################################################################################
+answers/
+
+Teacher and Student have permissions to use this suffix.
+Teacher can see all answers of his students to his tasks.
+Student can solve tasks from his teachers and can see own answers. Can solve one task only once and cannot change answer.
+
+###############################################################################################################################################
+earned_points/
+
+Teacher has permissions to use this suffix.
+Teacher can see all given points to his students for their answers and give points to not rated answers.
+
+###############################################################################################################################################
+final_grades/
+
+Teacher has permissions to use this suffix.
+Teacher can see all his given grades and can grade his exams from his students.
+
+
+
