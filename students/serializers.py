@@ -7,7 +7,8 @@ class StudentSerializer(serializers.ModelSerializer):
     teachers = serializers.StringRelatedField(many=True, read_only=True)
     exams = serializers.StringRelatedField(many=True, read_only=True)
     answers = serializers.StringRelatedField(many=True, read_only=True)
+    final_grades = serializers.StringRelatedField(many=True, read_only=True)
 
     class Meta:
         model = Student
-        fields = ('id', 'username', 'teachers', 'exams', 'answers',)
+        fields = ('id', 'username', 'teachers', 'exams', 'answers', 'final_grades', )

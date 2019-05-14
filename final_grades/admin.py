@@ -1,3 +1,4 @@
 from django.contrib import admin
+from final_grades.models import FinalGrade
 
-# Register your models here.
+admin.site.register(FinalGrade)
